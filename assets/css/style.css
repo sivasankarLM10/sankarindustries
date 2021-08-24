@@ -9,8 +9,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 a {
@@ -289,7 +291,24 @@ section {
 .section-title {
   padding-bottom: 30px;
 }
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
 
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 100% { transform: rotate( 0.0deg) }
+}
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -339,10 +358,13 @@ section {
 }
 
 .about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #149ddd;
-  line-height: 0;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
 }
 
 .about .content p:last-child {
@@ -426,7 +448,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #080808;
+  background: #e20505;
   height: 10px;
 }
 
@@ -434,7 +456,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #f30e0e;
+  background-color: #00A170;
 }
 
 /*--------------------------------------------------------------
@@ -714,7 +736,10 @@ section {
 .services .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -727,7 +752,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #009B77;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -797,7 +822,7 @@ section {
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: rgb(224, 15, 15);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
