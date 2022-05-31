@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -468,7 +467,30 @@ Continual research of industry-leading audio, visual and collaboration technolog
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKe3W3fhutMzKgj7JuF6ipWTiFq8AsSeI",
+      authDomain: "bi0s-recruitment.firebaseapp.com",
+      databaseURL: "https://bi0s-recruitment-default-rtdb.firebaseio.com",
+      projectId: "bi0s-recruitment",
+      storageBucket: "bi0s-recruitment.appspot.com",
+      messagingSenderId: "411618802588",
+      appId: "1:411618802588:web:eb8ef378386407d3ef2659",
+      measurementId: "G-3RZB6ZRSB5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
 </body>
-
 </html>
